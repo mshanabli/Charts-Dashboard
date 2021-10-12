@@ -8,7 +8,8 @@
 }
 
 .navbar,
-.charts {
+.charts-list,
+.charts-form {
   display: flex;
   align-items: center;
 }
@@ -21,12 +22,40 @@
 }
 
 .navbar .brand {
-  color: #fff;
+  color: #fc0;
   font-family: 'Playball', cursive;
   font-size: 2rem;
 }
 
-.charts {
+.charts-form {
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+}
+
+.charts-form .form-select label {
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.charts-form .form-select select {
+  width: 200px;
+  padding: 2px 5px;
+}
+
+.charts-form .form-submit {
+  background-color: transparent;
+  border: 2px solid #567;
+  border-radius: 4px;
+  width: 150px;
+  padding: 5px 0;
+}
+
+.charts-form .form-submit:hover {
+  background-color: #567;
+  color: #fff;
+}
+
+.charts-list {
   justify-content: space-evenly;
 }
 
