@@ -1,3 +1,11 @@
 import React from 'react';
 
-export const App = () => <h1>App Component</h1>;
+import { Navbar } from './components/navbar';
+import { Charts } from './components/charts';
+
+export const App = () => (
+  <>
+    <Navbar />
+    <Charts />
+  </>
+);

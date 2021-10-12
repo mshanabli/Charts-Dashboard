@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar,
+.charts {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #567;
+  border-bottom: 1px solid #345;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+}
+
+.navbar .brand {
+  color: #fff;
+  font-family: 'Playball', cursive;
+  font-size: 2rem;
+}
+
+.charts {
+  justify-content: space-evenly;
+}
+
+.chart {
+  border: 3px solid;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  height: 200px;
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.bar-chart {
+  border-color: #500;
+  background-color: #a00;
+}
+
+.line-chart {
+  border-color: #050;
+  background-color: #0a0;
+}
+
+.pie-chart {
+  border-color: #005;
+  background-color: #00a;
+}
