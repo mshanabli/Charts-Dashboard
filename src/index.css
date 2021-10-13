@@ -1,3 +1,7 @@
+/*
+  For simplicity, all styles are added here.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
@@ -56,6 +60,8 @@
 }
 
 .charts-list {
+  flex-wrap: wrap;
+  gap: 50px 0;
   justify-content: space-evenly;
 }
 
@@ -65,9 +71,14 @@
   box-sizing: border-box;
   color: #fff;
   height: 200px;
-  width: 200px;
+  width: 40%;
   padding: 20px;
   text-align: center;
+}
+
+.table-chart {
+  border-color: #555;
+  background-color: #aaa;
 }
 
 .bar-chart {
@@ -83,4 +94,45 @@
 .pie-chart {
   border-color: #005;
   background-color: #00a;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+}
+
+.loading div {
+  position: relative;
+}
+
+.loading div div {
+  position: absolute;
+  border: 4px solid #fa0;
+  opacity: 1;
+  border-radius: 50%;
+  animation: loading 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.loading div div:nth-of-type(2) {
+  animation-delay: -0.5s;
+}
+
+@keyframes loading {
+  0% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
 }
