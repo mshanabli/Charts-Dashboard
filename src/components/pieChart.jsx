@@ -1,3 +1,9 @@
 import React from 'react';
 
-export const PieChart = () => <div className="chart pie-chart">Pie Chart</div>;
+export const PieChart = props => (
+  <div className="chart pie-chart">
+    Pie Chart
+    <br />
+    {props.chart.id}
+  </div>
+);
