@@ -63,6 +63,7 @@
   flex-wrap: wrap;
   gap: 50px 0;
   justify-content: space-evenly;
+  padding-bottom: 50px;
 }
 
 .chart {
